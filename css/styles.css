@@ -140,3 +140,20 @@ li:last-child {
   padding: 30px 20px;
   margin-top: 40px;
 }
+
+/* ================================
+COLOR & TEXT STYLING
+================================ */
+/* ก. Color Palette */
+.text-primary {
+  color: #1e3784;
+}
+.text-secondary {
+  color: #1d7d45;
+}
+.text-accent {
+  color: #b97302;
+}
+.text-neutral {
+  color: #e74c3c;
+}
