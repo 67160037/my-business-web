@@ -190,6 +190,7 @@ COLOR & TEXT STYLING
 /* ========================
    BUTTONS & FORM
 ======================== */
+/*ก. Button Hover Effects*/
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -263,7 +264,7 @@ table {
   padding: 15px 20px;
   background-color: #b5d7ce;
   border-radius: 10px; /* เพิ่มขอบมน */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเล็กน้อย */
+  box-shadow: 0 2px 8px rgba(227, 227, 227, 0.1); /* เพิ่มเงาเล็กน้อย */
 }
 
 .nav-menu .logo {
