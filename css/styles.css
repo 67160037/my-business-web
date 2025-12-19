@@ -17,3 +17,44 @@ body {
   background-color: #f9f9f9;
   color: #333;
 }
+
+/* ========================
+   TYPOGRAPHY Element Selectors
+======================== */
+h1 {
+  font-size: 2.5rem;
+  color: #5a3825;
+}
+h2 {
+  font-size: 2rem;
+  margin: 1rem;
+  color: #6f4e37;
+}
+h3 {
+  font-size: 1.6rem;
+  padding: 3rem 2rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0.5rem;
+  line-height: 1.6;
+}
+
+/* ================================
+PSEUDO-CLASS SELECTORS
+================================ */
+a {
+  padding: 15px 20px; /* padding ของ nav items */
+  margin-right: 15px;
+  color: #264de4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
