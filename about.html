@@ -4,11 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 2rem auto;
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
   </head>
   <body>
     <!-- 2.1 เรื่องราวของบริษัท-->
-    <header>
+    <header id="header">
       <h1>About Daily Grind Coffee</h1>
+    </header>
       <p>
         Daily Grind Coffee เริ่มต้นจากความหลงใหลในกลิ่นหอมของกาแฟสด
         และความสุขเล็ก ๆ ที่ได้จากการนั่งจิบกาแฟดี ๆ สักแก้วในบรรยากาศสบาย ๆ<br />
@@ -21,42 +41,57 @@
         รวมถึงพัฒนาสูตรกาแฟเฉพาะของร้านที่ให้รสชาตินุ่มละมุนและเป็นเอกลักษณ์
         เพื่อให้ลูกค้าได้สัมผัสประสบการณ์กาแฟที่แตกต่าง
       </p>
-    </header>
+    </div>
     <main>
       <!--2.2 ทีม (ใช้<figure> สําหรับแต่ละคน)-->
-      <section>
+      <section class="team section">
         <u><h2>ทีมงานของเรา</h2></u>
-        <figure>
-          <img src="images/barista" alt="Barista" width="400" />
-          <figcaption><b>คุณ A</b> <br />บาริสต้า</figcaption>
-        </figure>
+        <div class="container">
+          <div class="cards">
+            <div class="team-card card">
+              <figure>
+                <img src="images/barista" alt="Barista" width="400" />
+                <figcaption><b>คุณ A</b> <br />บาริสต้า</figcaption>
+              </figure>
+            </div>
 
-        <br />
-        <figure>
-          <img src="images/manager" alt="Manager" width="400" />
-          <figcaption><b>คุณ B</b> <br />ผู้จัดการ</figcaption>
-        </figure>
-        <br />
+            <div class="team-card card">
+              <figure>
+                <img src="images/manager" alt="Manager" width="400" />
+                <figcaption><b>คุณ B</b> <br />ผู้จัดการ</figcaption>
+              </figure>
+            </div>
 
-        <figure>
-          <img src="images/คนทำเบเกอรี่.jpg" alt="คนทำเบเกอรี่" width="400" />
-          <figcaption><b>คุณ C</b> <br />คนทำเบเกอรี่</figcaption>
-        </figure>
+            <div class="team-card card">
+              <figure>
+                <img
+                  src="images/คนทำเบเกอรี่.jpg"
+                  alt="คนทำเบเกอรี่"
+                  width="400"
+                />
+                <figcaption><b>คุณ C</b> <br />คนทำเบเกอรี่</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
       </section>
       <!--2.3 Mission/Vision-->
       <section>
         <u><h2>Mission & Vision</h2></u>
-        <p>
-          <strong>Mission:</strong> มอบกาแฟคุณภาพและบริการที่อบอุ่นให้กับทุกคน
-        </p>
-        <p>
-          <strong>Vision:</strong>
-          เป็นร้านกาแฟที่ลูกค้าไว้วางใจและอยากกลับมาเสมอ
-        </p>
+          <p>
+            <strong>Mission:</strong> มอบกาแฟคุณภาพและบริการที่อบอุ่นให้กับทุกคน
+          </p>
+          <p>
+            <strong>Vision:</strong>
+            เป็นร้านกาแฟที่ลูกค้าไว้วางใจและอยากกลับมาเสมอ
+          </p>
+        </div>
       </section>
       <br />
       <!-- 2.4 Link กลับหน้าแรก -->
-      <a href="index.html">กลับหน้าแรก</a>
+      <div class="section">
+        <a href="index.html">กลับหน้าแรก</a>
+      </div>
     </main>
     <footer>
       <p>&copy; 2025 Daily Grind Coffee</p>
