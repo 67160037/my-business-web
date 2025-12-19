@@ -79,7 +79,7 @@ li:last-child {
   height: 100vh; /*(full screen height)*/
   color: white;
   text-align: center;
-  padding: 60px 20px; /*4. ข.(vertical, horizontal)*/
+  padding: 60px 20px; /*4. ข.(vertical,horizontal)*/
 }
 .hero h1 {
   font-size: 5vw;
