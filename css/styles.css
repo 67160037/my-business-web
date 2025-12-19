@@ -130,7 +130,7 @@ li:last-child {
   border-bottom: 2px solid #6f4e37;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 100; /*Z-index Layering*/
 }
 
 #footer {
@@ -185,4 +185,72 @@ COLOR & TEXT STYLING
 }
 .text-justify {
   text-align: justify;
+}
+
+/* ========================
+   BUTTONS & FORM
+======================== */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background: #6f4e37;
+  color: white;
+  margin-top: 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin: 10px 5px 10px 0;
+}
+
+.btn:hover {
+  background: #5a3825;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #3e2723;
+}
+
+.btn.cancel {
+  background: #999;
+}
+
+.btn.cancel:hover {
+  background: #777;
+}
+form {
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 500px;
+}
+input,
+textarea {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+}
+table {
+  margin: 1rem;
+}
+.address {
+  width: 90%;
+  max-width: 800px;
+  margin: 1rem;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem;
+}
+.iframe {
+  margin: 1rem;
 }
