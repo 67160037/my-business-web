@@ -4,17 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      /* 5. Form Layout (Contact Page) */
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 500px;
+        margin: 2px;
+        padding: 20px;
+        background-color: #fdfdfd;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      .contact-form button {
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <header>
+    <header id="header">
       <h1>ติดต่อเรา</h1>
     </header>
 
     <main>
       <!--4.1 มี Contact Form สําหรับป้อนข้อมูล-->
-      <section id="contact">
+      <section class="contact-form">
         <h2>Contact Form</h2>
-        <form>
+        <form class="contact-form">
           <label for="name">ชื่อ:</label><br />
           <input type="text" id="name" name="name" required /><br /><br />
 
@@ -25,24 +57,26 @@
           <textarea id="msg" name="msg" rows="5" required></textarea
           ><br /><br />
 
-          <button type="submit">ส่งข้อความ</button>
-          <button type="reset">ยกเลิก</button>
+          <button class="btn" type="submit">ส่งข้อความ</button>
+          <button class="btn cancel" type="reset">ยกเลิก</button>
         </form>
       </section>
+      <br />
       <!-- 4.2 ที่อยู่ของบริษัท -->
       <section id="address">
         <h2>ที่อยู่</h2>
-        <address>
+        <address class="address">
           Daily Grind Coffee<br />
           123 ถนนกาแฟ ตำบลแสนสุข อำเภอเมือง จังหวัดชลบุรี 20130<br />
           โทร: 012-345-6789
         </address>
       </section>
-
+      <br />
       <!-- 4.3 Google Maps embed -->
       <section id="map">
         <h2>แผนที่</h2>
         <iframe
+          class="iframe"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.7384595426793!2d106.642568!3d10.754628899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f40e070e27d%3A0x2c4394fc4dc17ae5!2sThe%20Daily%20Grind%20Coffee!5e0!3m2!1sen!2sth!4v1764950699642!5m2!1sen!2sth"
           width="450"
           height="400"
@@ -54,12 +88,14 @@
         </iframe>
       </section>
       <br />
-      <a href="index.html">กลับหน้าแรก</a>
-      <a href="about.html">กลับเกี่ยวกับ</a>
-      <a href="services.html">กลับหน้าบริการ</a>
+      <div class="section">
+        <a href="index.html">กลับหน้าแรก</a>
+        <a href="about.html">กลับเกี่ยวกับ</a>
+        <a href="services.html">กลับหน้าบริการ</a>
+      </div>
     </main>
 
-    <footer>
+    <footer id="footer">
       <p>&copy; 2025 Daily Grind Coffee</p>
     </footer>
   </body>
