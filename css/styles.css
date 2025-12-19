@@ -95,9 +95,9 @@ li:last-child {
 
 .container {
   width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  max-width: 1200px; /* (ความกว้างสูงสุด)*/
+  margin: 0 auto; /*(center)*/
+  padding: 40px 20px; /*(padding horizontal/vertical)*/
 }
 .card {
   width: 500px;
