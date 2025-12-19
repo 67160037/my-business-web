@@ -4,38 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>บริการของเรา</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <style>
+      .services {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .service-card {
+        width: 500px;
+        height: 420px;
+        margin: 1rem;
+
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        min-width: 250px;
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+
     <!-- 3.1 รายการบริการ -->
-    <header>
+    <header id="header">
       <h1>บริการของ Daily Grind Coffee</h1>
     </header>
     <main>
       <!-- 3.2 Service-->
-      <section id="service1">
-        <u><h2>กาแฟและเครื่องดื่ม</h2></u>
-        <p>เครื่องดื่มร้อน-เย็นคุณภาพเยี่ยม</p>
-        <img src="images/เครื่องดื่ม" alt="กาแฟและเครื่องดื่ม" width="450" />
-      </section>
+      <section class="services">
+        <div class="service-card">
+          <u><h2>กาแฟและเครื่องดื่ม</h2></u>
+          <p class="text-primary">เครื่องดื่มร้อน-เย็นคุณภาพเยี่ยม</p>
+          <img src="images/เครื่องดื่ม" alt="กาแฟและเครื่องดื่ม" width="450" />
+        </div>
 
-      <section id="service2">
-        <u><h2>เบเกอรี่</h2></u>
-        <p>ขนมอบสดใหม่ทุกวัน</p>
-        <img
-          src="images/bakery.webp"
-          alt="ภาพร้านกาแฟและเครื่องดื่ม"
-          width="450"
-        />
-      </section>
+        <div class="service-card">
+          <u><h2>เบเกอรี่</h2></u>
+          <p class="text-secondary">ขนมอบสดใหม่ทุกวัน</p>
+          <img
+            src="images/bakery.webp"
+            alt="ภาพร้านกาแฟและเครื่องดื่ม"
+            width="450"
+          />
+        </div>
 
-      <section id="service3">
-        <u><h2>Co-Working Space</h2></u>
-        <p>พื้นที่ทำงานส่วนตัว พร้อมปลั๊กไฟ และ Wi-Fi</p>
-        <img
-          src="images/co working.jpg"
-          alt="ภาพร้านกาแฟและเครื่องดื่ม"
-          width="450"
-        />
+        <div class="service-card">
+          <u><h2>Co-Working Space</h2></u>
+          <p class="text-accent">พื้นที่ทำงานส่วนตัว พร้อมปลั๊กไฟ และ Wi-Fi</p>
+          <img
+            src="images/co working.jpg"
+            alt="ภาพร้านกาแฟและเครื่องดื่ม"
+            width="450"
+          />
+        </div>
       </section>
       <!--3.3 Table เปรียบเทียบแพ็กเกจ-->
       <u><h2>ตารางเปรียบเทียบแพ็กเกจ</h2></u>
@@ -63,11 +91,12 @@
       </table>
     </main>
     <br />
-    <a href="index.html">กลับหน้าแรก</a>
-    <a href="about.html">กลับเกี่ยวกับ</a>
-    <a href="contact.html">Contact</a>
-
-    <footer>
+    <div class="section">
+      <a href="index.html">กลับหน้าแรก</a>
+      <a href="about.html">กลับเกี่ยวกับ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <footer id="footer">
       <p>&copy; 2025 Daily Grind Coffee</p>
     </footer>
   </body>
