@@ -22,13 +22,37 @@
         max-width: 100%;
         height: auto;
       }
+      /* Sticky Position */
+      .sticky-header {
+        position: sticky;
+        top: 0;
+        background-color: #3498db;
+        color: white;
+        padding: 15px;
+        border-radius: 4px 4px 0 0;
+        z-index: 100;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Content ให้ scroll ได้ */
+      .sticky-content {
+        background-color: #d6eaf8;
+        padding: 20px;
+        border-radius: 0 0 4px 4px;
+        margin-bottom: 20px;
+        max-height: 270px;
+      }
     </style>
   </head>
   <body>
     <!-- 2.1 เรื่องราวของบริษัท-->
     <header id="header">
       <h1>About Daily Grind Coffee</h1>
+      <div class="sticky-header">
+        เกี่ยวกับ Daily Grind Coffee - Scroll ลงมาดู!
+      </div>
     </header>
+    <div class="sticky-content">
       <p>
         Daily Grind Coffee เริ่มต้นจากความหลงใหลในกลิ่นหอมของกาแฟสด
         และความสุขเล็ก ๆ ที่ได้จากการนั่งจิบกาแฟดี ๆ สักแก้วในบรรยากาศสบาย ๆ<br />
@@ -48,21 +72,21 @@
         <u><h2>ทีมงานของเรา</h2></u>
         <div class="container">
           <div class="cards">
-            <div class="team-card card">
+            <div >
               <figure>
                 <img src="images/barista" alt="Barista" width="400" />
                 <figcaption><b>คุณ A</b> <br />บาริสต้า</figcaption>
               </figure>
             </div>
 
-            <div class="team-card card">
+            <div >
               <figure>
                 <img src="images/manager" alt="Manager" width="400" />
                 <figcaption><b>คุณ B</b> <br />ผู้จัดการ</figcaption>
               </figure>
             </div>
 
-            <div class="team-card card">
+            <div >
               <figure>
                 <img
                   src="images/คนทำเบเกอรี่.jpg"
