@@ -134,11 +134,11 @@ li:last-child {
 }
 
 #footer {
-  background: #333;
+  background: #333; /*ีเข้มต่าง conten*/
   color: #fff;
   text-align: center;
   padding: 30px 20px;
-  margin-top: 40px;
+  margin-top: 40px; /* ระยะห่างจาก content*/
 }
 
 /* ================================
