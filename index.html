@@ -4,10 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daily Grind Coffee</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      /* ================================
+CSS UNITS DEMONSTRATION
+================================ */
+      .units-section {
+        margin: 40px 0;
+      }
+      /* Pixel (px) - Fixed Unit */
+      .px-demo {
+        width: 300px;
+        padding: 20px;
+        margin: 10px;
+        background-color: #e5f1f2;
+        border: 2px solid #420917;
+        border-radius: 5px;
+      }
+    </style>
   </head>
   <body>
     <!-- 1.1 Header: ส่วนหัวของเว็บไซต์ที่มีโลโก้และชื่อบริษัท -->
-    <header>
+    <header id="header">
       <img
         src="images/cafe logo.png"
         alt="The Daily Grind Coffee Logo"
@@ -15,11 +33,13 @@
       />
       <h1>Daily Grind Coffee</h1>
       <!-- 1.2 Navigation menu (หน้าแรก, เกี่ยวกับ, บริการ, ติดต่อ) ลิ้งไปยังหน้าต่างๆ -->
-      <nav>
-        <a href="index.html">หน้าแรก</a><br />
-        <a href="about.html">เกี่ยวกับ</a><br />
-        <a href="services.html">บริการ</a><br />
-        <a href="contact.html">ติดต่อ</a><br />
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="about.html">เกี่ยวกับ</a></li>
+          <li><a href="services.html">บริการ</a></li>
+          <li><a href="contact.html">ติดต่อ</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -32,33 +52,36 @@
           src="images/cafe.jpg"
           alt="ภาพร้านกาแฟและเครื่องดื่ม"
           width="500"
+          class="img"
         />
       </section>
       <!-- 1.4 Featured services (3 บริการหลัก) -->
-      <section id="services">
+      <section class="services">
         <u><h3>บริการของเรา</h3></u>
-        <article>
-          <h4>กาแฟพรีเมียม</h4>
-          <p>คัดสรรเมล็ดกาแฟคุณภาพจากทั่วโลก</p>
+        <div class="px-demo card">
+          <h4 class="rem-demo-h">กาแฟพรีเมียม</h4>
+          <p class="rem-demo-p">คัดสรรเมล็ดกาแฟคุณภาพจากทั่วโลก</p>
           <img src="images/เมล็ดกาแฟ.jpg" alt="เมล็ดกาแฟ" width="250" />
-        </article>
+        </div>
 
-        <article>
-          <h4>เบเกอรี่โฮมเมด</h4>
-          <p>เค้ก ขนมปังอบสดใหม่ทุกวัน</p>
+        <div class="px-demo card rem-demo">
+          <h4 class="rem-demo-h">เบเกอรี่โฮมเมด</h4>
+          <p class="rem-demo-p">เค้ก ขนมปังอบสดใหม่ทุกวัน</p>
           <img src="images/เบเกอรี่.jpg" alt="เมล็ดกาแฟ" width="250" />
-        </article>
+        </div>
 
-        <article>
-          <h4>มุมทำงาน & Co-Working</h4>
-          <p>มีปลั๊กไฟ ฟรี Wi-Fi นั่งทำงานได้ทั้งวัน</p>
+        <div class="px-demo card rem-demo">
+          <h4 class="rem-demo-h">มุมทำงาน & Co-Working</h4>
+          <p class="rem-demo-p">มีปลั๊กไฟ ฟรี Wi-Fi นั่งทำงานได้ทั้งวัน</p>
           <img src="images/co-working.jpg" alt="เมล็ดกาแฟ" width="250" />
-        </article>
+        </div>
       </section>
     </main>
-
+    <!-- Fixed Buttons -->
+    <button id="back-to-top">Back to Top</button>
+    <div id="chat-widget">Chat</div>
     <br />
-    <footer>
+    <footer id="footer">
       <p>&copy; 2025 Daily Grind Coffee</p>
     </footer>
   </body>
