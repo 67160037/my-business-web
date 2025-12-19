@@ -260,9 +260,12 @@ table {
 .nav-menu {
   display: flex; /* ใช้ flexbox */
   justify-content: space-between; /* กระจาย space ระหว่าง logo กับ menu items */
-  align-items: center; /* จัดแนว vertical */
   padding: 15px 20px;
-  background-color: #b5d7ce;
+  width: 90%;
+  max-width: 530px; /* จำกัดกว้างสูงสุด */
+  margin: 0; /* จัดให้อยู่กลางหน้าจอ */
+  box-sizing: border-box;
+  background-color: #d5b7bd;
   border-radius: 10px; /* เพิ่มขอบมน */
   box-shadow: 0 2px 8px rgba(227, 227, 227, 0.1); /* เพิ่มเงาเล็กน้อย */
 }
@@ -301,4 +304,52 @@ table {
     gap: 10px;
     width: 100%;
   }
+}
+/* ================================
+Absolute Position
+================================ */
+.absolute-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-color: #ecf0f1;
+  border: 2px solid #95a5a6;
+  margin: 20px 0;
+  overflow: hidden;
+}
+.absolute-child {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+.absolute-child.top-left {
+  top: 10px;
+  left: 10px;
+}
+.absolute-child.top-right {
+  top: 10px;
+  right: 10px;
+}
+.absolute-child.bottom-left {
+  bottom: 10px;
+  left: 10px;
+}
+.absolute-child.bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+.absolute-child.centered {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f39c12;
 }
