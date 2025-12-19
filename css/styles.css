@@ -157,3 +157,22 @@ COLOR & TEXT STYLING
 .text-neutral {
   color: #e74c3c;
 }
+/* Background colors */
+.bg-light {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 4px;
+}
+.bg-info {
+  background-color: #d1ecf1;
+  border-left: 4px solid #0c5460;
+  padding: 15px;
+  border-radius: 4px;
+}
+/* Font styling */
+.font-bold {
+  font-weight: 700;
+}
+.font-italic {
+  font-style: italic;
+}
