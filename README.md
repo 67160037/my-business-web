@@ -23,27 +23,31 @@ my-business-web/
 ├── about.html
 ├── services.html
 ├── contact.html
+├── css/
+│   └── styles.css
 ├── images/
+│   ├── hero-img.jpg
 │   ├── bakery.webp
 │   ├── barista
 │   ├── cafe logo.png
 │   ├── cafe.jpg
 │   ├── co working.jpg
-│   ├── co-working.jpg
 │   ├── manager
-│   ├── Screenshot 2025-12-06 135605.png
-│   ├── Screenshot 2025-12-06 135618.png
-│   ├── Screenshot 2025-12-06 140528.png
-│   ├── Screenshot 2025-12-06 140538.png
-│   ├── Screenshot 2025-12-06 143159.png
-│   ├── Screenshot 2025-12-06 143242.png
-│   └── Screenshot 2025-12-06 143609.png
-│   ├── กาแฟ.jpg
 │   ├── คนทำเบเกอรี่.jpg
+│   ├── กาแฟ.jpg
 │   ├── เครื่องดื่ม.jpg
 │   ├── เบเกอรี่.jpg
-│   └── เมล็ดกาแฟ.jpg
+│   ├── เมล็ดกาแฟ.jpg
+│   ├── Screenshot 2025-12-19 213413.png
+│   ├── Screenshot 2025-12-19 213444.png
+│   ├── Screenshot 2025-12-19 213548.png
+│   ├── Screenshot 2025-12-19 213614.png
+│   ├── Screenshot 2025-12-19 213624.png
+│   ├── Screenshot 2025-12-19 213652.png
+│   └── Screenshot 2025-12-19 213718.png
 └── README.md
+
+
 ```
 
 ---
@@ -52,22 +56,26 @@ my-business-web/
 
 ### หน้าแรก (Home)
 
-![Home](images/Screenshot%202025-12-06%20135605.png)
-![Home](images/Screenshot%202025-12-06%20135618.png)
+![Home](images/Screenshot%202025-12-19%20213147.png)
+
+![Home](images/Screenshot%202025-12-19%20213343.png)
+![Home](images/Screenshot%202025-12-19%20213313.png)
 
 ### หน้าเกี่ยวกับ (About)
 
-![About](images/Screenshot%202025-12-06%20140528.png)
-![About](images/Screenshot%202025-12-06%20140538.png)
+![About](images/Screenshot%202025-12-19%20213413.png)
+![About](images/Screenshot%202025-12-19%20213444.png)
+![About](images/Screenshot%202025-12-19%20213548.png)
 
 ### หน้าบริการ (Services)
 
-![Services](images/Screenshot%202025-12-06%20143609.png)
-![Services](images/Screenshot%202025-12-06%20143159.png)
+![Services](images/Screenshot%202025-12-19%20213614.png)
+![Services](images/Screenshot%202025-12-19%20213624.png)
 
 ### หน้าติดต่อ (Contact)
 
-![Contact](images/Screenshot%202025-12-06%20143242.png)
+![Contact](images/Screenshot%202025-12-19%20213652.png)
+![Contact](images/Screenshot%202025-12-19%20213718.png)
 
 ---
 
