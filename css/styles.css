@@ -58,6 +58,18 @@ a:hover {
   color: #3498db;
   text-decoration: underline;
 }
+a:visited {
+  color: #761056;
+}
+a:active {
+  color: #c0392b;
+}
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  margin-bottom: 0;
+}
 
 /* ========================
    LAYOUT & COMPONENTS 
